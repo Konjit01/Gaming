@@ -48,10 +48,8 @@ public:
     void move(const Point& destination, double stepSize) override;
     bool isColliding(const std::shared_ptr<Shape>& other) const override
     {
-
-        return false; // Replace with actual implementation
+      return false;
     }
-
 private:
     Point calculateEdgeNormal(const Point& edge) const;
     std::vector<Point> _initialVertices;

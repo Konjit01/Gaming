@@ -1,7 +1,6 @@
 #include "circularshape.h"
 
 
-
 CircularShape::CircularShape(const Point &center, double r, double minorR) : _center{center}, radius(r), _minorRadius(minorR)
 {
 }

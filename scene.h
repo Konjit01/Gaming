@@ -26,9 +26,6 @@ public:
 
     void mapComponentToScene(const std::shared_ptr<Shape>& component);
     void mapPointToScene(Point& point);
-
-
-
     std::vector<Point> hasObstruction(const Point& start, const Point& end, std::shared_ptr<Shape> playingPieces);
     std::pair<Point, bool> areLinesIntersecting(const LinearMath::LineSegment &line1, const LinearMath::LineSegment &line2);
     std::vector<std::pair<Point, std::vector<Point>>> scanPossibleCollision(std::shared_ptr<Polygon> polygon, const Point& endPosition, bool center=false);
@@ -44,9 +41,7 @@ public:
 private:
     Scene(const Point & origin, double width, double height) :
         _origin{origin}, _width{width}, _height{height}
-    {
-
-    }
+    {}
 private:
     Point _origin;
     double _width, _height, _endPosition;

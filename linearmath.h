@@ -1,5 +1,6 @@
 #ifndef LINEARMATH_H
 #define LINEARMATH_H
+
 #include "point.h"
 
 class LinearMath
