@@ -1,6 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,151,47"/>
-<area shape="rect" id="node2" href="$classPolygon.html" title="Represents a polygon in three&#45;dimensional space." alt="" coords="217,17,292,43"/>
-<area shape="rect" id="node3" href="$classShape.html" title="The Shape class." alt="" coords="47,71,109,98"/>
-<area shape="rect" id="node4" href="$classCircularShape.html" title="The CircularShape class." alt="" coords="199,71,311,98"/>
-</map>
