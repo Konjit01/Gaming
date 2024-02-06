@@ -1,3 +1,9 @@
+/**
+ * @file Point.h
+ *
+ * @brief Defines the Point class, representing a point in three-dimensional space.
+ */
+
 #ifndef POINT_H
 #define POINT_H
 #include <compare>
@@ -5,7 +11,8 @@
 #include <tuple>
 
 /**
- * @brief The Point class
+ * @class Point
+ * @brief Represents a point in three-dimensional space.
  */
 
 class Point

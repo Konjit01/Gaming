@@ -292,6 +292,7 @@ bool Polygon::intersects(const std::shared_ptr<Polygon>& other, const Point& des
 
     return true;  // Overlap on all axes, polygons are colliding
 }
+
 Point Polygon::calculatePolygonCenter()
 {
     if (!_transformedVertices.size())
