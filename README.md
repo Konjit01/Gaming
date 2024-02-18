@@ -37,6 +37,3 @@ This function determines if there are any obstacles or other shapes obstructing 
 between the player's playing pieces and their destination, taking into account the shortest
 distance.
 
-Since the code for circular shapes was not fully implemented, dynamic binding was not achieved
-for functions such as "move" and "rotate". Consequently, only polygons were utilized in the
-code.
