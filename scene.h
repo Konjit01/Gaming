@@ -15,15 +15,7 @@ public:
     Scene(const Scene& other) = delete;
     ~Scene() = default;
 
-    static std::shared_ptr<Scene> getInstance()
-    {
-        if (!instance_)
-        {
-            instance_ = std::shared_ptr<Scene>(new Scene(Point(500, 400), 1000, 800));
-        }
-        return instance_;
-    }
-
+    static std::shared_ptr<Scene> getInstance();
     void mapComponentToScene(const std::shared_ptr<Shape>& component);
     void mapPointToScene(Point& point);
     std::vector<Point> hasObstruction(const Point& start, const Point& end, std::shared_ptr<Shape> playingPieces);
@@ -39,9 +31,7 @@ public:
     void setPlayerPieces(std::unique_ptr<std::shared_ptr<Shape> > newPlayerPieces);
 
 private:
-    Scene(const Point & origin, double width, double height) :
-        _origin{origin}, _width{width}, _height{height}
-    {}
+    Scene(const Point & origin, double width, double height);
 private:
     Point _origin;
     double _width, _height, _endPosition;

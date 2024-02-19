@@ -39,16 +39,9 @@ public:
     void setY(double y) { _y = y; }
     void setZ(double z) { _z = z; }
 
-    friend std::ostream& operator<<(std::ostream & ss, const Point& point)
-    {
-        ss << "(" << point._x << ", " << point._y << ", " << point._z << ")";
-        return  ss;
-    }
+    friend std::ostream& operator<<(std::ostream & ss, const Point& point);
 
-    auto operator<=>(const Point& other) const {
-        // Compare lexicographically by comparing x, y, and z
-        return std::tie(_x, _y, _z) <=> std::tie(other._x, other._y, other._z);
-    }
+    auto operator<=>(const Point& other) const;
     bool operator<(const Point& other) const;
     Point operator -(const Point& other) const;
     bool operator ==(const Point& other) const;
@@ -74,4 +67,6 @@ public:
 private:
     double _x,  _y, _z;
 };
+
+
 #endif // POINT_H

@@ -1,6 +1,20 @@
 #include "scene.h"
 #include "linearmath.h"
 
+
+Scene::Scene(const Point & origin, double width, double height) :
+    _origin{origin}, _width{width}, _height{height}
+{
+
+}
+std::shared_ptr<Scene> Scene::getInstance()
+{
+    if (!instance_)
+    {
+        instance_ = std::shared_ptr<Scene>(new Scene(Point(500, 400), 1000, 800));
+    }
+    return instance_;
+}
 void Scene::mapComponentToScene(const std::shared_ptr<Shape>& component)
 {
     if (const auto& polygon = std::dynamic_pointer_cast<Polygon>(component))

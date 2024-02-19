@@ -49,12 +49,12 @@ std::pair<Point, Point> CircularShape::calculateBoundingBox() const
 
 void CircularShape::rotate(const Point &pivot, double angle, bool clockwise)
 {
-    // Implementation of rotation for CircularShape
+    // To be implemented
 }
 
 void CircularShape::move(const Point &delta, double step)
 {
-    // Implementation of movement for CircularShape
+    // To be implemented
 }
 
 bool CircularShape::isColliding(const std::shared_ptr<Shape> &other) const

@@ -180,3 +180,15 @@ double Point::dotProduct(const Point& other) const
 {
     return _x * other._x + _y * other._y + _z * other._z;
 }
+
+std::ostream& operator<<(std::ostream & ss, const Point& point)
+{
+    ss << "(" << point._x << ", " << point._y << ", " << point._z << ")";
+    return  ss;
+}
+
+auto Point::operator <=>(const Point& other) const
+{
+    // Compare lexicographically by comparing x, y, and z
+    return std::tie(_x, _y, _z) <=> std::tie(other._x, other._y, other._z);
+}
