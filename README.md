@@ -1,3 +1,7 @@
+This project is currently under development.
+
+Explanation of the classes implemented for this project.
+
 The Point class is designed to represent a three-dimensional point that is used to define the
 vertices of polygons, whether they have any number of sides or are convex shapes. It also serves
 as the center for circular shapes like circles and ellipses. The class includes various arithmetic
